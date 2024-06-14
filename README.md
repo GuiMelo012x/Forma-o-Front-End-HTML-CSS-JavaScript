@@ -1,2 +1,3 @@
-# Forma-o-Front-End-HTML-CSS-JavaScript
-Curso de Front-End que estou fazendo na Udemy - Formação Front-end - HTML, CSS, JavaScript, React. Do professor Matheus Battisti, do Hora de Codar
+# Formação Front-End - HTML,CSS e JavaScript
+
+Aqui, colocarei os arquivos do curso "Formação Front-end - HTML, CSS, JavaScript, React e +", do professor Matheus Battisti, do Hora de Codar.
