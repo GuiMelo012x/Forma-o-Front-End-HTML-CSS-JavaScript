@@ -1,0 +1,48 @@
+h3{
+    color:rgba(247, 0, 255, 0.918);
+    font-size: 50px;
+}
+
+p{
+    color:blue;
+}
+
+/* Comentário no CSS */
+
+.paragrafo-1{
+    color:red;
+}
+
+
+.paragrafo-2{
+    color:green;
+}
+
+#id-1{
+    color:brown;
+}
+
+#id-2{
+    color:blueviolet
+}
+
+
+/* Teste de Prioridades */
+
+h2{
+    border-bottom: 2px solid red;
+}
+
+#teste-id{
+    border-bottom: 3px solid blue;
+}
+
+.teste-classe{
+    border-bottom: 5px solid green;
+}
+
+.rgb-a{
+    font-size:30px;
+    color: rgb(0, 0, 255,0.5);
+    background-color: blueviolet;
+}

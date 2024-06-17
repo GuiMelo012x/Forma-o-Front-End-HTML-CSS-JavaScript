@@ -1,0 +1,75 @@
+Existem 3 maneiras de adicionar CSS ao HTML:
+	Inline - quando os estilos são adicionados a um atributo especifico.
+	Internal -  quando o CSS é adicionado na tag head.
+	External - quando o CSS é adicionado através de um arquivo externo. É o melhor e mais utilizado.
+
+Inline CSS
+	style = "color:red;"
+	 <h1 style="color:red;"> Mudar Apenas a Cor com Inline</h1> 
+	 <h1 style="color:purple;font-size: 50px;border-bottom: 5px solid red;"> Mudar a cor e o tamanho</h1>
+	 
+	 
+Internal CSS
+	É uma técnica melhor que o inline, colocando todos os estilos na tag head.
+	Deve-se criar uma tag <style> no head e ir adicionando as regras.
+
+External CSS
+	A forma ideal de adicionar estilos a um arquivo HTML.
+	É necessário criar outro arquivo ".css" na pasta do projeto.
+	Após criar, é necessário adicionar, na head, um comando de link para pegar o arquivo css e mesclar com o projeto: 
+		<link rel="stylesheet" href="css/style.css">
+	No arquivo exterior, é adicionado as regras da seguinte forma:
+		h1{
+		 color: red;
+		}
+	Desta forma, todos os h1 estarão vermelhos.
+
+Ordem do CSS
+	O CSS é carregado a partir de uma ordem, se temos os 3 estilos aplicados, ele segue a seguinte ordem:
+		inline > internal = external > padrão do navegador.
+	Interno e externo têm a mesma prioridade, porém, a última regra prevalece.
+
+Múltiplos Arquivos CSS
+	É uma boa prática criar vários arquivos de CSS, pois facilita a divisão do CSS por páginas.
+	Deve-se importar todos os arquivos na head, e o último a ser importado, vai ter prioridade nas regras de estilo.
+
+Comentários no CSS
+	São utilizados com /*[...]*/
+		/* Comentário */
+
+Classes e IDs
+	São utilizadas para especificar elementos específicos para os atributos.
+	IDs são utilizados para elementos únicos na página.
+	Classes servem para um ou mais elementos, geralmente utilizadas em conjuntos de elementos.
+
+Classes
+	São inseridos através do HTML
+	Desta forma, no css, quando alterarmos a classe, todos os atributos que possuem a mesma classe irão herdar do mesmo estilo.
+	Comando:
+		p.nome_classe + TAB = <p class = "nome_classe"> - no HTML.
+		.nome_classe{ - no CSS.
+		
+IDs
+	Também inseridos através do HTML.
+	Ele é único, não se repete na mesma página.
+	Comando:
+		p#nome_id + TAB = <p id="nome_id">.
+		#nome_id { - no CSS.
+
+Ordem dos Seletores
+	Se uma tag estiver com id e uma classe ao mesmo tempo, a prioridade segue na seguinte ordem: 
+		id > class > seletor de tag.
+	O id terá prioridade, porém regras que não se conflitam, irão funcionar normalmente.
+
+Cores no CSS
+	Podem ser definidas em nomes ou códigos hexadecimais (RGB).
+	color: ctrl + espaço = mostra a lista de cores.
+	Em hexadecimal, #000 é a cor preta e #FFF é a cor branca.
+	Em hexadecimal, #aa55ff é a mesma coisa que #a5f.
+	#RRGGBB - os dois primeiros representam o vermelho, depois verde e depois azul.
+	background-color: blue; --> altera o plano de fundo no atributo.
+	
+	
+RGBa
+	Representa a opacidade.
+	color: rgb(0, 0, 255,0.5); --> um azul transparente, opaco.

@@ -10,8 +10,8 @@ Parágrafos
 	<p> Texto </p> - para escrever os parágrafos do site.
 	
 Tags Sem Conteúdo
-	<br/> - para quebrar linha, utilizamos a tag <br />
-	<hr/> - quebra a linha fazendo uma linha reta que divide os paragrafos.
+	<br> - para quebrar linha, utilizamos a tag <br />
+	<hr> - quebra a linha fazendo uma linha reta que divide os paragrafos.
 
 Comentários no HTML 
 	<!-- Conteúdo comentado --> - Faz comentários no código HTML
