@@ -1,0 +1,51 @@
+Para começar um arquivo HTML, basta digitar !H e dar TAB
+Títulos 
+	<h1> Título </h1>
+	Os títulos são divididos entre h1 - h6, sendo utilizados de acordo com a importância do conteúdo no site.
+	H1 é o maior, h6 seria o menor.
+	Geralmente colocamos apenas um H1 por página.
+	Cada H tem uma importância semântica diferente no site.
+
+Parágrafos
+	<p> Texto </p> - para escrever os parágrafos do site.
+	
+Tags Sem Conteúdo
+	<br/> - para quebrar linha, utilizamos a tag <br />
+	<hr/> - quebra a linha fazendo uma linha reta que divide os paragrafos.
+
+Comentários no HTML 
+	<!-- Conteúdo comentado --> - Faz comentários no código HTML
+	
+Atributos
+	<a href="https//google.com"> Google </a> - atributo de hyperlink.
+		<a href="site.com"> Texto com Hyperlink </a> 
+	<a href="https//google.com" target="_blank"> Google </a> - Abrir em nova aba
+		o target="_blank" faz com que o usuário abra o site em uma nova aba ao clicar.
+		
+Imagens no HTML
+	<img src="img/foto.jpg" alt=""> - coloca uma imagem no html.
+	É uma tag que se fecha sozinha, logo, não é necessário outra tag para fechar.
+	
+Atributo "alt"
+	<img src="img/foto.jpg" alt="descrição da foto"> - o atributo "alt" serve para descrever o conteúdo da foto, caso ela não carregue
+	ou caso seja acessada por pessoas com deficiência visual.
+	É super importante, e toda foto deve ser comentada, pois facilita na acessibilidade.
+	O alt também ajuda quando o Google procura seu site e nao consegue ler a foto, logo, ele lerá o "alt".
+
+Listas
+	Não Ordenadas
+		As listas não ordenadas são criadas pela tag <ul>, e os itens pela tag <li>
+	Ordenadas	
+		As listas ordenadas são criadas pela tag <ol>, e os itens pela tag <li>
+
+Tabelas
+	Dificilmente utilizado.
+	<table> abre a tabela.
+	<tr> é o cabeçalho.
+	<th> diz o nome da coluna.
+	<td> é o contéudo.
+
+Tag Div
+	Tem como principal propósito de encapsular elemetnos que estão conectados entre si.
+	É utilizada para criar divisões ou seções no site.
+	Com ela, é possível criar elementos menores, como cards.
