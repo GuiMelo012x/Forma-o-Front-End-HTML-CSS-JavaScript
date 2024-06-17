@@ -1,0 +1,10 @@
+.height-width{
+    height: 200px;
+    width: 100px;
+    background-color: red;
+}
+
+.height-width-2{
+    height: 300px; /* Como ele nao possui width declarada, irá ocupar toda a linha horizontal. */
+    background-color: #031031;
+}

@@ -73,3 +73,38 @@ Cores no CSS
 RGBa
 	Representa a opacidade.
 	color: rgb(0, 0, 255,0.5); --> um azul transparente, opaco.
+	
+Background-Opacity
+	Também é possível deixar a cor do background opaca:
+		background-color: green;
+		opacity: 0.2;
+	Porém a forma mais fácil:
+		background-color: rgba(0,0,255,0.5);
+		color: #0000;
+
+Background-Image
+	Coloca uma foto de fundo para o site.
+	background-image: url("..\local-da-foto");
+	o ".." serve para voltar uma pasta para trás.
+
+Centralizando uma Imagem de Background
+	As vezes a imagem é muito maior que o elemento que estamos inserindo.
+	Isto pode ser feito com duas regras: 
+		background-position: center.
+		background-size: cover;
+		
+Dar regras a mais de um elemento no CSS
+	.elemento-1,
+	.elemento-2{
+		color:red;
+	}
+	
+Box Model
+	É um elemento muito importante do HTML.
+	Consiste em quatro partes: altura e largura, padding, border e margin.
+
+Height and Width
+	São a base do box model, estas propriedades consistem no conteúdo do elemento.
+	Podemos alterar as duas e mudar o tamanho do elemento na tela.
+	Alguns elementos do HTML já vem com 100% de largura.
+	Caso um elemento nao possua width declarada, ele irá ocupar toda a linha horizontal.
