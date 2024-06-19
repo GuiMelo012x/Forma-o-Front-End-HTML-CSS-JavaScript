@@ -1,0 +1,98 @@
+.container-center{
+    text-align: center;
+}
+
+.container-left{
+    text-align: left;
+}
+
+.container-right{
+    text-align: right;
+    
+}
+
+div{
+    border: solid 3px;
+}
+
+.text-aligned{
+    text-align: center;
+}
+
+
+.underline{
+    margin-top: 75px;
+    text-decoration: underline;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+
+.remove-underline{
+    text-decoration: none;
+    color:red;
+}
+
+.upper{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.lower{
+    text-transform: lowercase;
+
+}
+p{
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.serif{
+    font-family: Georgia;
+}
+
+.sans-serif{
+    font-family: Helvetica;
+
+}
+
+.monospace{
+    font-family: "Courier New";
+
+}
+
+.cursive{
+    font-family: cursive;
+}
+
+.fantasy{
+    font-family: fantasy;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.oblique{
+    font-style: oblique;
+}
+.thin,.bold,.bolder{
+    font-family: Helvetica;
+}
+
+.thin{
+    font-weight: 100;
+    font-size: 25px;
+
+}
+
+.bold{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.bolder{
+    font-weight: 900;
+    font-size: 30px;
+}

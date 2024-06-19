@@ -1,17 +1,19 @@
 #box-model{
     background-color: darkgray;
+    color: blue;
     width: 200px;
     height: 100px;
     padding: 50px;
     border: 4px solid red;
     margin: 10px 40px 20px 10px; 
     outline: 4px solid blue;
+    text-align: center;
 }
 
 .box-model{
     background-color: black;
     border:none;
-    color:white;
+    color:white
 }
 
 /* Elementos do Box-Model:
@@ -30,4 +32,6 @@ margin - afastar o elemento de outros (espaçamento externo).
     height: 100px;
     padding: 50px;
     border: 4px solid red;
+    text-align: center;
+
 }

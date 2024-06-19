@@ -152,3 +152,51 @@ Unindo os elementos do Box-Model
 		padding - espaçamento interno.
 		border - decorar o elemento com bordas.
 		margin - afastar o elemento de outros (espaçamento externo).
+		
+Alinhamento de Texto
+	Os textos podem ser alinhados em várias direções. Por padrão, ele é alinhado à esquerda.
+	Com a regra "text-align", configuramos center ou right para alterar o valor padrão.
+	É muito comum utilizar o valor "center":
+		text-align: center;
+		
+Text Decoration
+	Com a decoration, podemos adicionar efeitos ao texto, como sublinhar, cortar e colocar em itálico ou em negrito:
+		text-decoration: underline; --> põe sublinhado.
+		text-decoration: none; --> tira o a decoração de tags que já possuem uma, como a tag "a" que vem com um underline embaixo do link, por exemplo.
+
+Text Transform
+	Com a text-transform, podemos alterar como o texto é exibido. Pode ser alterado para uppercase ou lowercase.
+	O CSS deve ser aplicado quando queremos texto em uppercase.
+	NUNCA escrever o texto com Caps Lock no HTML.
+	Comando:
+		text-transform: upper;
+		text-transform:lower;
+	
+Espaçamento Entre Letras
+	Com a "letter-spacing" podemos alterar o espaçamento entre as letras de um texto.
+	Comando:
+		letter-spacing: 5px;
+
+Fontes
+	Com o CSS, é possível alterar o tipo da fonte, com a regra "font-family".
+	As disponíveis são: Serif, Sans-serif, Monospace, Cursive e Fantasy.
+	Todos os navegadores têm várias fontes que podemos utilizar.
+	E ainda podemos adicionar fontes externas com o Google Fonts, por exemplo.
+		Comando:
+			font-family: sans-Serif;
+	Também é possível mudar o aspecto das letras com a regra "font-style".
+	Os valores são: normal,italic e oblique. Normal é o padrão.
+	Oblique seria o itálico, porém com pequenas diferenças.
+		Comando:
+			font-style: italic;
+	Com o comando font-weight, é possível deixar a fonte mais fina ou mais grossa. Seria o semelhante a colocar em negrito.
+	Os valores vão de 100 a 900, sendo 100 o mais fino.
+	Algumas palavras também funcionam como valores, por exemplo: bold(600)
+	Existem fontes que não tem todas as variações, e é necessário tomar cuidado com isso.
+		Comando:
+			font-weight: 100; 
+			font-weight: 500;
+	Font-size é a regra responsável por deixar a fonte pequena ou grande. É configurada com unidades de medida, como o px, além de outras.
+	Quanto menor o valor, menor a fonte.
+		Comando:
+			font-size: 10px;
