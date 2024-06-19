@@ -107,4 +107,48 @@ Height and Width
 	São a base do box model, estas propriedades consistem no conteúdo do elemento.
 	Podemos alterar as duas e mudar o tamanho do elemento na tela.
 	Alguns elementos do HTML já vem com 100% de largura.
-	Caso um elemento nao possua width declarada, ele irá ocupar toda a linha horizontal.
+	Caso um elemento nao 	possua width declarada, ele irá ocupar toda a linha horizontal.
+
+Padding
+	É o espaçamento entre o conteúdo e a borda do elemento, seria o espaçamento interno.
+	É um recurso utilizado para criar uma distância entre o conteúdo (texto) e a extremidade do elemento.
+	Podemos adicionar o padding aos lados individuais de um elemento:
+		padding-top, padding-right, padding-bottom ou padding-left.
+	Ou então, podemos adicionar utilizando apenas uma linha, com o shorthand:
+		padding: 5px 10px 15px 20px;
+		padding: top,right,bottom,left --> a ordem dos comandos.
+	É possível resumir a regra:
+		padding: 10px 20px -> isto significaria a mesma coisa que "padding: 10px 20px 10px 20px" padding: topos - lados;
+		padding: 10px; --> Aplica para todos os lados, seria o equivalente a padding: 10px 10px 10px 10px;
+		
+
+Padding e Width
+	Padding é adicionada a largura do elemento, e pode dar problema.
+	Um elemento com 200px de width e 25px de padding tem um tamanho total de 250px na horizontal.
+	A regra "box-sizing: border-box" faz o elemento respeitar o tamanho que está em width.
+	
+Border
+	A borda é o elemento central, e fica entre o padding e margin.
+	Padding é o espaçamento interno e margin o externo.
+	Esta regra geralmente é utilizada como propósito decorativo.
+	A regra de border é definida em algumas partes: tamanho, aspecto e cor da borda:
+		border: 5px solid red;
+	Também pode ser adicionada de formas individuais.
+		border-top,border-right,border-bottom,border-left.
+	A borda pode ser arredondada, com o comando "border-radius":
+		border-radius: 5px;
+		border-radius pode ser aplicada mesmo sem um "border" sendo aplicado anteriormente no elemento.
+
+Margin
+	A propriedade margin é responsável pelo espaçamento externo do elemento.
+	Podemos aplicar as regras nela na mesma forma que aplicamos no padding, seja individualmente ou shorthand.
+	Se eu quiser uma distancia maior entre a linha de cima e o meu conteúdo, aplico margin-top.
+	Se eu quiser uma distância maior entre o meu conteúdo e o limite esquerdo da tela, aplico o margin-left.
+
+Unindo os elementos do Box-Model	
+	Em alguns elementos, utilizaremos todas as propriedades do box-model.
+	Em resumo, eles são:
+		width e height - tamanho.
+		padding - espaçamento interno.
+		border - decorar o elemento com bordas.
+		margin - afastar o elemento de outros (espaçamento externo).
