@@ -1,4 +1,3 @@
-Para começar um arquivo HTML, basta digitar !H e dar TAB
 Títulos 
 	<h1> Título </h1>
 	Os títulos são divididos entre h1 - h6, sendo utilizados de acordo com a importância do conteúdo no site.

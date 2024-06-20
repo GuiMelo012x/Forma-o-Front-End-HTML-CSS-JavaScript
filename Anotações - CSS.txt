@@ -170,7 +170,7 @@ Text Transform
 	NUNCA escrever o texto com Caps Lock no HTML.
 	Comando:
 		text-transform: upper;
-		text-transform:lower;
+		text-transform: lower;
 	
 Espaçamento Entre Letras
 	Com a "letter-spacing" podemos alterar o espaçamento entre as letras de um texto.
@@ -200,3 +200,81 @@ Fontes
 	Quanto menor o valor, menor a fonte.
 		Comando:
 			font-size: 10px;
+			
+Display
+	Em HTML e CSS, temos elementos que são considerados "de bloco" e outros "inline".
+		Block - ocupa a linha toda. Os elementos quebram linha quando adiciona novos elementos em bloco.
+		Inline - ficam um do lado do outro.
+	A tag div é um exmeplo de block, e span um exemplo de inline.
+	Com a regra "display", podemos mudar este comportamento, ou seja, deixar uma div como inline.
+	Comando:
+		display: inline-block; --> faz com que 3 conteúdos, que ocupam 3 linhas, ocupe apenas 1 linha e fiquem os 3 alinhados um do lado do outro.
+		display:block; --> faz com que 3 conteudos, que ocupam 1 linha só, ocupem 3, e ficam um em cima do outro.
+		display: none; --> esconde um elemento. Ele não é excluído, apenas some.	
+		
+Posições dos Elementos
+	A regra position e seus valores são responsáveis por posicionar o elemento na tela.
+	Recebe valores como "relative,fixed,absolute,sticky" e mais.
+	O valor padrão é o static.
+	É essencial quando precisamos mudar o local onde o elemento deve ficar no projeto.
+
+Position Static
+	Não faz nada com o elemento, é o valor padrão. Todo elemento já possui essa posição.
+	É redundante atribuit um elemento com este valor.
+	Static não é afetado por regras como top,right,bottom e left (top:10px, por exemplo).
+	Static segue apenas o fluxo do HTML.
+	Comando:
+		position: static;
+
+Position Relative
+	Na relative, as regras de top,right,bottom e left movem o elemento pela tela.
+	Também segue o fluxo do HTML.
+	Normalmente, não se utiliza as regras de posição com relative.
+	Risco de ficar na frente de outro elemento.
+	Comando:
+		position: relative;
+
+Position Absolute
+	Com o valor absolute em position, o elemento pode ser movido pela tela toda.
+	É possível quebrar o fluxo do HTML.
+	Esta regra também é afetada pelo top,right,bottom e left. 
+	Posicionar com absolute pode tanto ser uma solução como um problema.
+	Ele vai pro topo absoluto da direção, por exemplo:
+		top:1px; --> ele vai pro topo da pagina (esquerdo se nao especificar right)
+		right:1px; --> ele vai pro fundo direito da página.
+	Comando:
+		position: absolute;
+
+Relative com Absolute
+	Podemos resolver o problema do absolute com o relative.
+	Um elemento com absolute é ligado ao elemento mais próximo com posição relativa, se não, ele é ligado ao body.
+	Um container com posição relativa é controlado melhor do que os com absolute.
+	
+Position Fixed
+	Com fixed, o elemento pode ser fixado na tela.
+	Mesmo após os scroll na página, o elemento permanece na mesma posição, estando sempre presente.
+	O recurso é frequentemente utilizado para criar barra de navegação fixa.
+	Ele fica fixo e mesmo dando scroll pra baixo ou pra cima, ele não se mexe.
+	Comando:
+		position: fixed;
+		top: 50px; --> sem declarar onde ele vai ficar, ele não aparece.
+		right: 50px;
+		
+Position Sticky
+	Sticky também faz o elemento fixar na tela, mas quando ele volta para a sua posição original, ele se comporta como relative.
+	A posição do elemento é onde ele foi inserido no HTML.
+	Ele vai se mover junto com a tela, e só gruda na tela quando passa o scroll.
+	Comando:
+		position:sticky;
+		top:10px; --> também precisa ser declarado.
+		right:10px;
+		
+Z Index 
+	Se temos dois elementos com as mesmas posições ou se eles colidem na página, podemos escolher qual será exibido.
+	O elemento com maior valor prevalece.
+	Utilizar valores baixos para esta regra.
+	Comando:
+		z-index: 1; 
+		z-index:3; --> esse vai prevalecer, pois é o maior
+		z-index:2; 
+		
