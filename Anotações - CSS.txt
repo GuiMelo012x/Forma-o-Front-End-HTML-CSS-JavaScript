@@ -156,6 +156,7 @@ Unindo os elementos do Box-Model
 Alinhamento de Texto
 	Os textos podem ser alinhados em várias direções. Por padrão, ele é alinhado à esquerda.
 	Com a regra "text-align", configuramos center ou right para alterar o valor padrão.
+	Também funciona para alinhar imagens.
 	É muito comum utilizar o valor "center":
 		text-align: center;
 		
