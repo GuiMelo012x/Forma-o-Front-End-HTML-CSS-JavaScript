@@ -1,0 +1,77 @@
+html{
+    background-image: url(../../img/exerc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+.centro{
+    background-color: red;
+    width: 290px;
+    height: 500px;
+    position: relative;
+    top:50px;
+    left: 110px;
+    padding: 20px;
+    justify-content: center;
+    text-align:left;
+    border-radius: 8px;
+}
+
+h1{
+    color: white;
+    font-size:50px;
+    margin:18px 10px 35px 15px;
+    line-height: 47px;
+    font-weight: bold;
+    text-shadow: black 2px 2px 2px;
+    letter-spacing: 2px;
+}
+
+.centro p{
+    margin: 10px 10px 10px 15px;
+    color: white;
+    line-height: 25px;
+    font-size: 18px;
+    text-shadow: black 3px 4px 3px;
+}
+
+.saber{
+    background-color: white;
+    width: 150px;
+    margin-top: 50px;
+    margin-left: 40px;
+    padding: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border-radius: 5px;
+    position: relative;
+    bottom:48px;
+    right: 25px;
+    
+}
+
+.saber a{
+    text-align:center;
+    color:red;
+    text-decoration: none;
+    position: relative;
+    top: 6px;
+
+}
+.imagem{
+    position: relative;
+    bottom: 20px;
+}
+
+a{
+    color:white;
+}
+
+.under{
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}
