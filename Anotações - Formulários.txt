@@ -171,6 +171,7 @@ Input de arquivos
 	Comando:
 		<label for="image">Insira a imagem:</label>
         <input type="file" name="image">
+		<input type="file" multiple accept="image/png, image/jpg">  --> se precisar especificar apenas o tipo de arquivo que ele aceita. Outros não irão ser possíveis de enviar.
 		
 Input de números
 	Configurando o type para "number", obtemos um input que só aceita dígitos.
@@ -217,3 +218,17 @@ Atributo required
 	Comando:
 		<label for="birthyear">Ano de Nascimento:</label>
         <input type="text" placeholder="Digite o ano em que você nasceu" required>
+
+No input, tem uma regra para colocar caracteres minimos e maximos no campo:		
+	minlength = "1" --> maneira de deixar o campo obrigatório, diz que é necessário no mínimo um item.
+	maxlength="30" --> coloca um número máximo de caracteres no campo.
+	
+No CSS, podemos alterar todos os inputs de uma vez. 
+Dentro dos colchetes, podemos colocar o tipo do input que queremos alterar:
+	input[type="text"],
+	input[type="number"],
+	input[type="date"],
+	input[type="file"]{
+		width: 400px;
+	}
+

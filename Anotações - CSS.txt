@@ -234,6 +234,7 @@ Position Relative
 	Risco de ficar na frente de outro elemento.
 	Comando:
 		position: relative;
+		top: -62px; (É possível mover pra cima, se colocado negativamente o valor em px)
 
 Position Absolute
 	Com o valor absolute em position, o elemento pode ser movido pela tela toda.
