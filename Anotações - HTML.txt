@@ -49,5 +49,8 @@ Tag Div
 	É utilizada para criar divisões ou seções no site.
 	Com ela, é possível criar elementos menores, como cards.
 	
+	
 figcaption --> para o algoritmo ver a descrição da imagem.
 blockquote --> quando for escrever uma citação.
+<u> --> escreve um texto sublinhado.
+<b> --> escreve um texto em negrito.
