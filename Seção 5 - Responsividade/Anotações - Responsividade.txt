@@ -1,0 +1,53 @@
+O que é responsividade?
+	É a técnica de adaptar uma página web para vários dispositivos diferentes.
+	O site aparece de uma forma para PC, e de outra no mobile.
+	Ou seja, temos mudanças de CSS baseada na resolução.
+	Detectamos o que o usuário está utilizando, e adaptamos o nosso site a resolução.
+	As regras de CSS são as mesmas, porém dentro de um recurso chamado "media query".
+
+Configurando a Responsividade
+	Primeiro temos que adicionar uma meta tag ao nosso head, que seria:
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	Isso faz com que o conteúdo se adapte com os dispositivos.
+	Adicionamos também uma escala de 1:1.
+
+Media Query
+	É o recurso que utilizamos para criar os breakpoints.
+	Os breakpoints adaptam o nosso projeto para diferentes tipos de tela.
+	Configuramos uma largura, e depois as regras começam a ser alternadas, dependendo do tamanho da tela.
+	Comando:
+		h1{
+			color: red;
+		}
+
+		@media screen and (max-width:500px) {
+			h1{
+				color: blue;
+			}
+		}
+		
+Media Query com Min-Width
+	Se utilizarmos min-width em vez de max-width, a media query funciona ao contrário.
+	Então podemos desenvolver projetos com uma técnica chamada mobile first.
+	Os projetos que tem mais usuários mobile geralmente são feitos em mobile first.
+	
+Padrão de Breakpoints no Mercado
+	Alguns breakpoints são padrões, e geralmente muito utilizados no mercado de TI.
+	Estes são:
+		600px e abaixo: celular.
+		768px até 600  px: tablets.
+		992px até 768px: mini laptops.
+		992px e acima: laptops e desktops.
+	É comum em projetos profissionais utilizarmos estes valores para desenvolvermos para diferentes dispositivos.
+
+Landscape
+	Podemos alterar o CSS apenas para usuários com visão em landscape.
+	Landscape seria quando o celular vira de lado, por exemplo.
+	Para isso, precisamos de um atributo chamado orientation com o valor de landscape, na media query.
+	O código é ativado quando a orientação é alterada.
+	Comando:
+		@media screen and (orientation: landscape) {
+			h3{
+				color:red;
+			}
+		}	

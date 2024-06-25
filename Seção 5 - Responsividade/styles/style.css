@@ -1,0 +1,36 @@
+/* Media Query */
+
+h1{
+    color: red;
+}
+
+p{
+    background-color: red;
+    color: black;
+}
+
+@media screen and (max-width:500px) {
+    h1{
+        color: blue;
+    }
+}
+
+/* Min Width*/
+@media screen and (min-width:800px) {
+    p{
+        background-color: black;
+        color: red;
+
+    }
+}
+
+/* Landscape */
+h3{
+    display: none;
+}
+
+@media screen and (orientation: landscape) {
+    h3{
+        display: block;
+    }
+}
