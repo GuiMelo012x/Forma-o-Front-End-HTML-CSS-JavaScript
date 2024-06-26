@@ -1,0 +1,6 @@
+O que é Flexbox?
+	Flexbox é uma valor da propriedad display.
+	Esta é a maneira mais utilizada para acondicionar elementos em um container.
+	Temos diversas regras dentro do flex.
+	O flex deve ser considerado no elemento pai, e os elementos filhos serão os movimentados.
+	Os elementos filhos também podem ter regras específicas.
