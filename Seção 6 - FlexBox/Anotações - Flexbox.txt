@@ -4,3 +4,135 @@ O que é Flexbox?
 	Temos diversas regras dentro do flex.
 	O flex deve ser considerado no elemento pai, e os elementos filhos serão os movimentados.
 	Os elementos filhos também podem ter regras específicas.
+
+Aplicando flex
+	Para aplicar o flex, vamos precisar de uma estrutura base, que consiste em um container e elementos filhos dentro do container.
+	Colocamos a regra display com o valor de flex no container, e agora os elementos estão seguindo o fluxo do flex.
+	Com flex, todos os elementos se comportam parecido com os elementos inline.
+	Comando:
+		display: flex;
+
+Layout em coluna
+	Podemos mudar o comportamento inline do flex(chamado de row).
+	Alterando o flex-direction para column, teremos agora os itens se comportando como elementos de bloco.
+	O valor padrão de direction é row.
+	Comando:
+		display:flex;
+		flex-direction:column;
+
+Flex Wrap
+	O flex tenta colocar todos os elementos na mesma linha por padrão.
+	Porém há situações que queremos x elementos por linha.
+	Para isso acontecer, devemos aplicar a regra "flex-wrap:wrap".
+	Agora, as linhas respeitam a largura dos elementos.
+	Comando:
+		display:flex;
+		flex-wrap: wrap;
+		
+Posicionando conteúdo
+	Com justify-content, é possível mudar como o conteúdo é posicionado no eixo horizontal.
+	Temos alguns valores interessantes nesta propriedade.
+	Por exemplo: centralizar os elementos na horizontal, basta colocar o valor de center.
+	Comando:
+		justify-content: center; --> posiciona no centro horizontal da box.
+		justify-content: space-around; --> faz um espaçamento igual entre as laterais dos elementos.
+		justify-content: space-between; --> espaça igualmente.
+		justify-content: end; --> alinha ao final.
+
+Posicionamento na vertical
+	No justify-content, os elementos são modificados na horizontal, já com align-items, é possível mudá-los na vertical.
+	A propriedade tem vários valores, como o center.
+	Comando:
+		align-items: center; --> posiciona no centro vertical da box.
+		align-items: flex-end; --> posiciona no final vertical da box.
+		align-items: stretch; --> alonga o item ao longo de toda a box.
+		
+Gap
+	O gap é uma regra que serve para colocar espaço entre elementos que estão no flex.
+	Nós especificamos a medida em px, e este valor é adicionado entre cada um dos elementos.
+	Comando: 
+		gap:10px;
+
+Order
+	Com a order, podemos mudar a ordem dos elementos.
+	Esta propriedade é utilizada nos elementos filhos.
+	Agora começamos com as regras que são aplicadas aos elementos filhos, não ao elemento pai.
+	Comando:
+		#one{ --> é colocado IDs para especificar quem seria o #one, #two e #three.
+			order: 1;
+		}
+
+		#two{
+			order: 2;
+		}
+
+		#three{
+			order: 3;
+		}
+		
+Grow
+	Com o flex-grow, podemos mudar a proporção de um ou mais elementos filhos.
+	A width precisa estar sem valor, como automática.
+	Exemplo: se colocarmos grow como 2, o elemento vai crescer duas vezes mais que os outros quando estiver se adaptando no container.
+	Comando:
+		.grow{
+		display: flex;
+		}
+
+		.grow .box{
+			flex: 1;
+		}
+
+		.grow .big {
+			flex:2;
+		}
+
+Basis
+	A regra flex-basis configuyra a largura base do elemento.
+	Nós podemos trabalhar com basis e grow juntas.
+	Grow vai preencher toda a largura que a basis deixar sozinha.
+	Comando:
+		.basis{
+		display: flex;
+		}
+
+		.basis .box{
+			flex-basis: 20px;
+		}
+
+		.basis .big{
+			flex-grow: 1;
+		}
+
+Shrink
+	O shrink é o oposto do grow.
+	Quando utilizamos, precisamos manter o tamanho dos outros elementos, 
+	então o elemento do shrink diminui o seu tamanho para manter o dos outros.
+	Usamos esta regra em conjunto de basis e grow.
+	Comando:
+		.shrink{
+			display: flex;
+		}
+
+		.shrink .box{
+			flex-grow: 1;
+			flex-shrink: 1;
+			flex-basis: 250px;
+			width: auto;
+		}
+
+		.shrink .small{
+			flex-shrink: 2;
+		}
+	
+Flex Shorthand
+	Utilizando apenas flex, conseguimos configurar grow, shrink e basis, nesta ordem mesmo.
+	Comando: 
+		flex: 2 1 100px; --> grow = 2 | shrink = 1 | basis = 100px
+	
+Auto Alinhamento
+	A regra align-self alinha um elemento diferente dos demais.
+	Podemos centralizar um elemento enquanto os outros seguem a regra de alinhamento do container.
+	Comando:
+		align-self:center;
+		
