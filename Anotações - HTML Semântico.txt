@@ -55,4 +55,3 @@ Tag Mark
 	A tag mark deve conter um texto dentro.
 	Ela define um conteúdo que precisa estar em evidência, gerando maior importância para o trecho.
 	Substitui o span, porém deixa marcado como se tivesse passado um marca-texto amarelo.
-	
