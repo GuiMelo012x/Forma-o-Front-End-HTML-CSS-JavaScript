@@ -1,0 +1,58 @@
+O que é HTML Semântico?
+	Tags de HTML que dão significado ao elemento.
+	Isso ajuda a estruturar melhor nosso site.
+	Contribui para o SEO da nossa página.
+	Exemplo de elementos não semânticos: div, span.
+	Exemplo de elementos semânticos: main, section, article.
+	
+Estrutura de uma Página Semântica
+	Ao adicionar elementos semânticos, podemos estruturar nossa página.
+	Cada seção do site tem uma tag que faz sentido ao elemento.
+	Isso facilita a manutenção do projeto.
+	
+Tag Section
+	A tag section define uma seção no documento.
+	Geralmente, um agrupamento por categorias, como uma seção de produtos, de contato.
+	Provavelmente um elemento que será utilizado muitas vezes em um projeto.
+
+Tag Article 
+	A tag article é utilizada para elementos informativos.
+	Podemos aplicar em: post de blog, comentários, card de produtos.
+	O conteúdo é individual, não fazendo relação com outro elemento ou article.
+	
+Tag Header
+	A tag header é utilizada para um conteúdo de introdução ou links de navegação.
+	Geralmente tem elementos como: headings, logo, informação do autor do post/página.
+	Podemos ter mais de um header por página.
+	Uma section pode ter uma header, por exemplo.
+
+Tag Footer
+	A tag footer é utilizada como rodapé da página, última seção do site
+	Mas também pode ser utilizada em outras tags, que precisem deste último elemento.
+	Geralmente contém: informações sobre a empresa, copyright, dados de contato, sitemap.
+	
+Tag Nav
+	É utilizada para demarcar blocos de navegação.
+	É esperado que haja links dentro dessa tag. Porém, nem todo link precisa estar numa nav.
+	Costumeiramente, são blocos grandes de link, exemplo: barra de navegação principal.
+
+Tag Aside
+	A tag aside é utilizada para criar conteúdos ao lado do conteúdo principal.
+	O que fica dentro de aside precisa estar indiretamente relacionado ao conteúdo principal.
+	Exemplo: temos uma lista de produtos sendo exibida, em aside temos os filtros e ordenação que ajudam na busca do produto.
+
+Tags Figure e Figcaption
+	As tags figure e figcaption são utilizadas em conjunto.
+	A figure é o elemento pai, e sua função é exibir alguma imagem na página, inserida pela tag img.
+	A figcaption é o elemento filho, e serve de legenda para a imagem.
+	
+Tag Main
+	A tag main é a que contém o conteúdo principal da página.
+	Não podemos utilizar mais de uma tag main por página.
+	O conteúdo da main deve ser único, e não repetido ao longo da página.
+
+Tag Mark
+	A tag mark deve conter um texto dentro.
+	Ela define um conteúdo que precisa estar em evidência, gerando maior importância para o trecho.
+	Substitui o span, porém deixa marcado como se tivesse passado um marca-texto amarelo.
+	
